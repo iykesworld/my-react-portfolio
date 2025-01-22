@@ -1,0 +1,161 @@
+.navbar{
+    position: fixed;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 80px;
+    padding: 30px 130px;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    z-index: 100;
+    margin-bottom: 200px;
+}
+.navbar.active{
+    background-color: #3b3434;
+    box-shadow: 0px 5px rgba(0, 0, 0, 0.1);
+}
+#contact-me-nav{
+    display: none;
+}
+
+.logo{
+    cursor: pointer;
+}
+.navbar-list{
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    text-decoration: none;
+    list-style: none;
+    gap: 26px;
+}
+.navbar-list li{
+    font-size: 24px;
+    cursor: pointer;
+    display: flex;
+    flex-direction: column;
+}
+.navbar-list li img{
+    display: flex;
+    margin-bottom: auto;
+}
+.navbar-list li:hover{
+    color: var(--pr-white);
+}
+.navbar-contact {
+    font-size: 20px;
+    padding: 10px;
+    font-weight: 700;
+    border-radius: 20px;
+    border: 2px solid var(--pr-white);
+    cursor: pointer;
+}
+
+.navbar-contact:hover{
+    transition: 0.3s;
+    box-shadow: 0 0 10px var(--pr-white);
+}
+
+.menu-open{
+    display: none;
+}
+.menu-close{
+    display: none;
+}
+@media (max-width:1024px) {
+
+    .navbar {
+        padding: 30px 60px;
+    }
+    
+}
+@media (max-width:820px) {
+    .navbar {
+        padding: 30px 10px;
+    } 
+    
+}
+@media (max-width:768px) {
+    
+    .navbar {
+        padding: 20px 20px;
+    }
+    .menu-open{
+        display: block;
+        margin-right: 30px;
+    }
+    .menu-close{
+        display: block;
+        position: relative;
+        top: 30px;
+        left: 290px;
+        width: 30px;
+    }
+    .navbar-list{
+        position: fixed;
+        flex-direction: column;
+        align-items: start;
+        top: 0;
+        gap: 20px;
+        background: #3b3434;
+        width: 350px;
+        height: 100%;
+        padding-top: 20px;
+        z-index: 100;
+        transition: right 0.5s;
+        right: -350px;
+        justify-content: start;
+    }
+    .navbar-list li{
+        font-size: 30px;
+        padding-left: 100px;
+        flex-direction: row;
+        gap: 20px;
+    }
+    
+}
+
+@media (max-width:440px) {
+    .navbar-contact {
+        display: none;
+    }
+    .navbar {
+        padding: 20px 10px;
+    }
+    .menu-open{
+        display: block;
+    }
+    .menu-close{
+        display: block;
+        position: relative;
+        top: 30px;
+        left: 290px;
+        width: 30px;
+    }
+    .navbar-list{
+        position: fixed;
+        flex-direction: column;
+        align-items: start;
+        top: 0;
+        gap: 30px;
+        background: #3b3434;
+        width: 350px;
+        height: 100%;
+        padding-top: 70px;
+        z-index: 100;
+        transition: right 0.5s;
+        right: -350px;
+    }
+    
+    .logo{
+        width: 155px;
+        height: 39px;
+    }
+    #contact-me-nav{
+        display: inherit;
+    }
+        
+}
+
+

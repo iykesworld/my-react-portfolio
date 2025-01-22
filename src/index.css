@@ -1,0 +1,22 @@
+:root{
+  --pr-black: #000000;
+  --pr-white: #ffffff;
+  --sec-white: #bababa;
+  --linear-color1: #00ccff;
+  --linear-color2: #d400d4;
+}
+*{
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+a{
+  text-decoration: none;
+  color: var(--pr-white);
+}
+body{
+  height: 100%;
+  background: linear-gradient(200deg, #312b2b  28%, #242020 61%, #3b3434 100%);
+  color: var(--sec-white);
+  font-family: outfit;
+}
