@@ -33,8 +33,8 @@
   -webkit-text-stroke: 0.4px #3b3434;
   background-image: linear-gradient(
     246deg,
-    var(--linear-color1) 41%,
-    var(--linear-color2) 100%
+    white 41%,
+    white 100%
   );
   background-repeat: no-repeat;
   -webkit-background-clip: text;

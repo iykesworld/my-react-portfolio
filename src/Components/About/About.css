@@ -26,6 +26,7 @@
 .about-text p{
     flex: 1;
     font-size: 20px;
+    font-style: justify;
 }
 #about-text-input{
     display: none;
