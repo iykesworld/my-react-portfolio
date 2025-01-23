@@ -28,23 +28,23 @@
   font-weight: 700;
 }
 .home-container h2 .span {
-  font-weight: 600;
-  color: transparent;
-  -webkit-text-stroke: 0.4px #3b3434;
+  font-weight: 700;
+  color: white;
+  /* -webkit-text-stroke: 0.4px #3b3434;
   background-image: linear-gradient(
     246deg,
-    white 41%,
-    white 100%
+    rgb(242, 255, 0) 41%,
+    rgb(251, 255, 0)00%
   );
   background-repeat: no-repeat;
   -webkit-background-clip: text;
   background-position: 0 0;
   position: relative;
   animation: headerBgText 6s linear infinite;
-  animation-delay: 2s;
+  animation-delay: 2s; */
 }
 
-@keyframes headerBgText {
+/* @keyframes headerBgText {
   0%,
   10%,
   100% {
@@ -54,7 +54,7 @@
   85% {
     background-position: 0 0;
   }
-}
+} */
 
 .home-avatar-container {
   position: relative;
